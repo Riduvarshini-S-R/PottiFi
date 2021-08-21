@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+}
+
+/* Nav bar */
+nav{
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%); 
+    height: 10vh;
+    padding: 0;
+}
+.logo{
+    width: 80px;
+    height:50px;
+}
+.nav-item{
+    /* background-color: white; */
+    text-align: right;
+}
+
+/*body*/
+.container-fluid{
+    margin: 0;
+    height: 100vh;  
+}
+/*One container*/
+.one{
+    background-image: url(../images/bg1.png);
+    background-size: 40%; 
+}
+.row{
+    height: 50vh;
+}
+.catchline{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+.catchtext{
+    color: #730C99;
+    text-align: center;
+    font-size: 40px;
+}
+.btn{
+    height: 5vh;
+    background-color: black;
+    border: 3px solid #730C99;
+    color: white;
+    margin: 2%;
+    width:100px;
+}
+
+/*Two container*/
+.two{
+    background-image: url(../images/bg2.png);
+    background-size:98%;
+}
+.heading{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.sign,.get{
+    color: #693699;
+    padding-top: 5%;
+}
+.details{
+    height: 80vh;
+}
+.signup,.getin{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    color: white;
+    padding-bottom: 10%; 
+}
+.signup{
+    border-right: 1px solid black;
+}
+.get{
+    border-left: 1px solid black;
+}
+    
+form{
+    width: 50vh;
+    height: 50vh;
+    padding-top: 7%;
+    text-align: center;  
+    background-color: #693699;
+}
+input[type=text]{
+    background-color: black;
+    color:white;
+    width: 150px;
+    height: 20px;
+}
+input[type=submit]{
+    background-color: black;
+    color:white;
+    border-radius: 4px;
+    padding:2% 5% 2% 5%;
+    border: 1px solid black;
+    width: 100px;
+}
+
+/*Three container*/
+.three{
+    background-image: url(../images/bg3.png);
+    background-size: cover;  
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.aboutus{
+    font-size: 20px;
+    color: #7C40A9;
+    text-align: center;
+}
+
+
+/*Four*/
+footer{
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);   
+    height: 50vh;
+}
+.contactdetails{ 
+    color: #fefced;
+    font-size: 20px;
+    text-align: center;
+}
+.footerdetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #fefced;
+    border-right: 1px solid #fefced ;
+}
+.quicklinks{
+    color: #fefced;
+    height: 50vh;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 20px;
+}
