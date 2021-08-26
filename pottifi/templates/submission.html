@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--------------------------- css -------------------------------->
+    
+    <!--------------------------- fonts -------------------------------->
+    
+    <title>submission page</title>
+</head>
+<body>
+    <!--------------------------- navbar -------------------------------->
+
+    <h1> check works </h1>
+    
+    <div class="container-fluid">
+        <div class="container">
+            <div class="first row">
+                <div class="col-3">
+                    <p>Last date: {{stagedetails.submissionclosedate}} </p>
+                </div>
+                <div class="col-3">
+                    <p>Total Submissions so far:</p>
+                </div>
+                <div class="col-3">
+                    <p>Result in: {{stagedetails.resultdate}}</p>
+                </div>
+                <div class="col-3">
+                    <p>Judges: {{stagedetails.judgename}}</p> 
+                </div>
+            </div>
+            <form action="submitaction"
+            <div class="secondary row">
+                <div class="col-6">
+                    <div class="col-12">
+                        <h3> YOUR SUBMISSION: <input id ="imageme" type="file" name="imagefile" multiple="false" accept="image/*"></h3>
+                    </div>
+                </div>
+                <input type="submit" value="upload">
+            </div>
+        </div>
+    </div>
+
+
+    <!--------------------------- javascript -------------------------------->
+
+</body>
+</html>

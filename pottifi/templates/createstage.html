@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--------------------------- css -------------------------------->
+    
+    <!--------------------------- fonts -------------------------------->
+    
+    <title>create-stage</title>
+</head>
+<body>
+    <!--------------------------- navbar -------------------------------->
+    <h4>CREATE STAGE</h4>
+    <form action="Create_stage" method="post">
+    {% csrf_token %}
+        <label>Event Title</label>
+            <input type="text" name="eventtitle" required><br><br>
+        <label>Event Theme</label>
+            <input type="text" name="eventtheme" required><br><br>
+        <label>Participant Limit (1-200)</label>
+            <input type="number" name="participantlimit" min="1" max="200" required><br><br>
+        <label>Total Enteries For An Individual</label>
+            <select name="individualentrylimit" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select><br><br>
+        <label>Judges count</label>
+            <input type="number" name="judgescount" min="1" max="5" required><br><br>
+        <label>Judges name</label>
+            <input type="text" name="judgename" required><br><br>
+        <label>Submissions Starts</label>
+            <input type="date" name="submissionstartdate"><br><br>
+        <label>Submissions Closes</label>
+            <input type="date" name="submissionclosedate"><br><br>
+        <label>Result Date</label>
+            <input type="date" name="resultdate"><br><br>
+        <input type="submit" value="create">
+    </form>
+    <!--------------------------- javascript -------------------------------->
+</body>
+</html>

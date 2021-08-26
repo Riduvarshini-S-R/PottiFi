@@ -1,0 +1,64 @@
+{% if message %}
+    <script>
+        alert ( '{{ message }}');
+    </script>
+{% endif %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--------------------------- css -------------------------------->
+    
+    <!--------------------------- fonts -------------------------------->
+    
+    <title>Pottifi-signin</title>
+</head>
+<body>
+    <!--------------------------- navbar -------------------------------->
+    <h4>LOGIN</h4>
+    <form action="/" method="post">
+    {% csrf_token %}
+    <label>mailid</label>
+        <input type="mail-id" name="mailid" required>
+    <label>password</label>
+        <input type="password" name="password" required>
+    <input type="submit" value="signin">
+    </form>
+    <br><br>
+
+    <h4>getin</h4>
+    <form action="/enterstagesubmission/"stagecode method="post">
+    {% csrf_token %}
+    <label>Stage code</label>
+        <input type="text" name="stagecode">
+    <label>mailid</label>
+        <input type="mail-id" name="mailid" required>
+    <label>password</label>
+        <input type="password" name="password" required>
+    <input type="submit" value="signin">
+    </form>
+    <br><br>
+
+
+    <h4>SIGN UP</h4>
+    <form action="signup" method="post">
+    {% csrf_token %}
+    <label>First name</label>
+        <input type="text" name="firstname" required><br><br>
+    <label>Last name</label>
+        <input type="text" name="lastname" required><br><br>
+    <label>EMail-id</label>
+        <input type="mail-id" name="mailid" required><br><br>
+    <label>Password</label>
+        <input type="password" name="password1" required><br><br>
+    <label>Retype Password</label>
+        <input type="password" name="password2" required><br><br>
+    <input type="submit" value="signup">
+    </form>
+    <!--------------------------- javascript -------------------------------->
+</body>
+</html>
