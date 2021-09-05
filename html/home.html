@@ -7,26 +7,29 @@
     <link href="/css/home.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>PottiFi</title>
+    <title>PottiFi-Home</title>
 </head>
-
-<!---------------------------------Nav bar---------------------------------->
-<nav class="navbar navbar-expand-lg navbar-dark">
-    <a href="#" class="navbar-brand"><img class="logo" src="../images/pottifii logo trans.png" alt="PottiFi">    PottiFi</a>
-    <div class="collapse navbar-collapse ml-auto">
-        <ul class="navbar-nav">
-            <li class="nav-item nav-link">Don't have an account?</li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Sign Up</a>
+<!------------------------------------------------------------------body-------------------------------------------------------------------------->
+<body>
+<!-----------------------------------------------------------------nav bar------------------------------------------------------------------------>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a href="#" class="navbar-brand"><img class="img-responsive logo" src="/images/pottifii logo trans.png" ></a>
+        <p class="navbar-brand text">PottiFi</p>
+        <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="navbar-item">
+                <p class="navbar-text">Dont have an account?</p>
+            </li>
+            <li class="navbar-item">
+                <a class="nav-link" href="#">
+                    Sign Up
+                </a>
             </li>
         </ul>
-    </div>
-</nav>
-
-<!----------------------------------------Body------------------------------>
-<body>
-<!-----------------------------------First container------------------------>
-    <div class="one container-fluid">
+        </div>
+    </nav>
+<!-------------------------------------------------------------tagline container-------------------------------------------------------------------->
+    <div class="tagline container-fluid">
         <div class="catchline row">
             <p class="catchtext">Wanna host photography events online?<br>Well PottiFi is here!<br></p>
         </div>
@@ -35,32 +38,26 @@
             <button class="btn">Get In</button>
         </div>
     </div>
-<!-----------------------------------Second container----------------------->
-    <div class="two container-fluid">
-        <div class="heading row">
-            <div class="sign col-6">
-                <div><h2>Sign In to host events!</h2></div>
-            </div>
-            <div class=" get col-6">
-                <div><h2>Get In to participate!</h2></div>
-            </div>
-        </div>
+<!--------------------------------------------------------------login container------------------------------------------------------------------>
+    <div class="login container-fluid">
         <div class="details row">
-            <div class="signup col-6">
-                <form>
+            <div class="signin col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <h2 class="head">Sign In to host events!</h2>
+                <form class="forms">
                     <h2 class="hd2">Sign In</h2><br>
                     <label for="fname">Username:</label><br>
-                    <input type="text"><br>
+                    <input type="text"><br><br id="secondline">
                     <label for="fname">Password:</label><br>
                     <input type="text"><br><br>
                     <input type="submit" value="Sign In">
                 </form>
             </div>
-            <div class="getin col-6">
-                <form>
+            <div class="getin col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <h2 class="head">Get In to participate!</h2>
+                <form class="forms">
                     <h2 class="hd2">Get in</h2><br>
                     <label for="fname">Stage code:</label><br>
-                    <input type="text"><br>
+                    <input type="text"><br><br id="secondline">
                     <label for="fname">Password:</label><br>
                     <input type="text"><br><br>
                     <input type="submit" value="Get In">
@@ -68,32 +65,32 @@
             </div>
         </div>
     </div>
-<!--------------------------------------Third Container--------------------->
-    <div class="three container-fluid">
-        <div class="aboutus">
+<!----------------------------------------------------------------------aboutus Container------------------------------------------------------------>
+    <div class="aboutus container-fluid">
+        <div class="content">
             <h1>About Us</h1>
             <p>PottiFi is a go-to option to host online competitions. <br>We, as competitors, felt the need of participating and hosting competitions in any part of the world with ease,<br> and hence <b>PottiFi</b></p>
         </div>
     </div>
-</body>
-
-<!------------------------------------------Footer-------------------------->
+<!------------------------------------------------------------------------footer-------------------------------------------------------------------------->
 <footer>
-    <div class="row">
+    <div class="footerdet row">
         <div class="footerdetails col-4">
             <p class="contactdetails">Powered by</p>
         </div>
         <div class="footerdetails col-4">
             <p class="contactdetails">Contact Us<br><br>help.pottifi@gmail.com<br>bigus12.tech@gmail.com</p>
         </div>
-        <div class="col-4">
-            <div class="quicklinks col-12">
-                <p>Quick Links</p>
-                <a class="contactdetails" href="#">About Us</a><br>
-                <a class="contactdetails" href="#">Sign Up</a><br>
-                <a class="contactdetails" href="#">Sign In</a><br>
-                <a class="contactdetails" href="#">Get In</a><br>   
-            </div>        
+        <div class="quicklinks col-4">
+            <ul>
+                <li><p class="contactdetails">Quick Links</p></li> 
+                <li><a class="contactdetails" href="#">About Us</a></li>
+                <li><a class="contactdetails" href="#">Sign Up</a></li>
+                <li><a class="contactdetails" href="#">Sign In</a></li>
+                <li><a class="contactdetails" href="#">Get In</a></li>     
+            </ul>     
         </div>
     </div>
 </footer>
+</body>
+</html>

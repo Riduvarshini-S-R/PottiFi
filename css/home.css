@@ -1,138 +1,131 @@
 *{
     margin: 0;
     padding: 0;
-    width: 100%;
     box-sizing: border-box;
     font-family: 'Anton', sans-serif;
 }
 
-/* Nav bar */
+/******************************************************************nav bar*************************************************************************/
+
+/* background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);  */
 nav{
-    background-color: #a4508b;
-    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%); 
-    height: 10vh;
-    padding: 0;
+    background-color: #730C99;
+}
+.navbar-brand,.navbar-text{
+    margin-bottom: 0;
 }
 .logo{
-    width: 80px;
-    height:50px;
-}
-.nav-item{
-    /* background-color: white; */
-    text-align: right;
+    height: 50px;
 }
 
-/*body*/
+/******************************************************************body****************************************************************************/
+body{
+    width: 100%;
+}
 .container-fluid{
     margin: 0;
-    height: 100vh;  
-}
-/*One container*/
-.one{
-    background-image: url(../images/bg1.png);
-    background-size: 40%; 
+    height: 720px;  
 }
 .row{
-    height: 50vh;
+    height: 350px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+/*****************************************************************Tagline container****************************************************************/
+.tagline{
+    background-image: url(../images/bg1.png);
+    background-size: 40%; 
 }
 .catchline{
     display: flex;
     justify-content: center;
     align-items:flex-end;
 }
-.buttons{
-    display: flex;
-    justify-content: center;
-}
 .catchtext{
     color: #730C99;
     text-align: center;
     font-size: 40px;
 }
+.buttons{
+    display: flex;
+    justify-content: center;
+}
 .btn{
-    height: 5vh;
+    height: 40px;
     background-color: black;
     border: 3px solid #730C99;
     color: white;
     margin: 2%;
-    width:100px;
+    width:7%;
 }
-
-/*Two container*/
-.two{
+/********************************************************************login container****************************************************************/
+.login{
     background-image: url(../images/bg2.png);
-    background-size:98%;
-}
-.heading{
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-.sign,.get{
-    color: #693699;
-    padding-top: 5%;
+    background-size: 98%;
 }
 .details{
-    height: 80vh;
+    height: 500px;
 }
-.signup,.getin{
-    display: flex;
-    justify-content: center;
-    align-items: center ;
-    color: white;
-    padding-bottom: 10%; 
+.signin,.getin{
+    padding-top: 10%;
+    padding-bottom: 10%;  
 }
-.signup{
+.signdetails{
+    padding-left: 10%;
+}
+.signin{
     border-right: 1px solid black;
-}
-.get{
-    border-left: 1px solid black;
-}
-    
+} 
+.head{
+    text-align: center;
+    color: black;
+}  
 form{
-    width: 50vh;
-    height: 50vh;
-    padding-top: 7%;
+    width: 50%;
+    height: 350px;
+    padding-top: 4%;
     text-align: center;  
     background-color: #693699;
+    margin-left: 25%;
+}
+label[for="fname"],.hd2{
+    color: white;
 }
 input[type=text]{
     background-color: black;
     color:white;
-    width: 150px;
-    height: 20px;
+    width: 50%;
+    height: 25px;
 }
 input[type=submit]{
-    background-color: black;
+    background-color: #000000;
     color:white;
     border-radius: 4px;
     padding:2% 5% 2% 5%;
     border: 1px solid black;
-    width: 100px;
+    width: 30%;
 }
 
-/*Three container*/
-.three{
+/*****************************************************************aboutus container*****************************************************************/
+.aboutus{
     background-image: url(../images/bg3.png);
     background-size: cover;  
-    height: 100vh;
+    height: 720px;
     display: flex;
     justify-content: center;
     align-items: center; 
 }
-.aboutus{
+.content{
     font-size: 20px;
     color: #7C40A9;
     text-align: center;
 }
-
-
-/*Four*/
+/******************************************************************footer**************************************************************************/
 footer{
-    background-color: #a4508b;
-    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);   
-    height: 50vh;
+    height: 350px;
+    background-color: #730C99;
 }
 .contactdetails{ 
     color: #fefced;
@@ -147,9 +140,161 @@ footer{
     border-right: 1px solid #fefced ;
 }
 .quicklinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #fefced;
-    height: 50vh;
     text-align: center;
-    padding-top: 100px;
     font-size: 20px;
+}
+ul{
+    list-style-type: none;
+}
+/*******************************************************************MEDIA QUERIES******************************************************************/
+
+/*
+    --Extra-small: 576px;
+    --Small:576px;
+    --Medium:768px;
+    --Large:992px;
+    --Extra-large:1200px;
+*/
+
+@media screen and (max-width:576px) {
+    /********************tagline container***********************/
+    .tagline{
+        height: 600px;
+    }
+    .catchline{
+        height: 320px;
+    }
+    .catchtext{
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+        margin-left: 7%;
+    }  
+    .btn{
+        width: 20%;
+        padding: 0;
+        font-size: 15px;
+        margin-left: 7%;
+    } 
+
+    /********************signin container**************************/
+    .login{
+        height: 750px;
+    }
+    .signin{
+        border: transparent;
+    }
+    .signin,.getin{
+        padding-left: 0px;
+        margin-right: 7%;
+    }
+    #secondline{
+        display: none;
+    }
+    form{
+        height: 100%;
+        width: 70%;
+    }
+    .hd2,.head{
+        font-size: 20px;
+    }
+    .head{
+        margin-left: 20%;
+    }
+    label[for="fname"]{
+        font-size: 15px;
+    }
+    input[type=text]{
+        height: 20px;
+    }
+    input[type=submit]{
+        height: 10px;
+        font-size: 12px;
+        padding-bottom: 10%;
+    }
+    .hd2,label[for="fname"]{
+        margin-bottom: 0px;
+    }
+    /*******************aboutus container********************/
+    .content{
+        font-size: 20px;
+    }
+    .aboutus{
+        background-size: cover;
+    }
+    /*******************footer******************************/
+    .contactdetails{
+        font-size: 12px;
+    }
+    .quicklinks{
+        font-size: 12px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:786px) {
+    .container-fluid{
+        height: 620px;
+    }
+    .catchtext{
+        margin-left: 5%;
+    }
+    .btn{
+        width: 15%;
+    }
+    .login{
+        height: 1100px;
+    }
+    .head{
+        margin-left: 1%;
+    }
+    .forms{
+        margin-left: 25%;
+    }
+    .signin{
+        border: transparent;
+    }
+    .contactdetails,.quicklinks{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width:786px) and (max-width:992px) {
+    .container-fluid{
+        height: 620px;
+    }
+    .btn{
+        width: 10%;
+    }
+    .signin,.getin{
+        height: 620px;
+    }
+    .forms{
+        width: 70%;
+        margin-right: 20%;
+        margin-left: 16%;
+    }
+    .head{
+        margin-left: 5%;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px){
+    .container-fluid{
+        height: 670px;
+    }
+    .catchtext,.btn{
+        margin-left: 7%;
+    }
+    .btn{
+        width: 10%;
+    }
+    .head{
+        margin-left: 10%;
+    }
+    form{
+        width: 60%;
+    }
+
 }
