@@ -4,72 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     <link href="/css/home.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>PottiFi-Home</title>
 </head>
 <!------------------------------------------------------------------body-------------------------------------------------------------------------->
 <body>
 <!-----------------------------------------------------------------nav bar------------------------------------------------------------------------>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a href="#" class="navbar-brand"><img class="img-responsive logo" src="/images/pottifii logo trans.png" ></a>
-        <p class="navbar-brand text">PottiFi</p>
-        <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto">
-            <li class="navbar-item">
-                <p class="navbar-text">Dont have an account?</p>
-            </li>
-            <li class="navbar-item">
-                <a class="nav-link" href="#">
-                    Sign Up
-                </a>
-            </li>
-        </ul>
-        </div>
-    </nav>
+            <nav class="navbar navbar-expand-md navbar-dark">
+            <a href="#" class="navbar-brand"><img class="img-responsive logo" src="../images/pottifi logo and text trans 2.png"></a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#toggleContent"
+            >
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="toggleContent">
+                <ul class="navbar-nav text-center ml-auto">
+                    <li>
+                        <a class="nav-link active" href="#">Home</a></li>
+                    <li>
+                        <a href="#aboutus!" class="nav-link" >About Us</a></li>
+                    <li>
+                        <a class="nav-link" href="#signup!">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
 <!-------------------------------------------------------------tagline container-------------------------------------------------------------------->
     <div class="tagline container-fluid">
-        <div class="catchline row">
-            <p class="catchtext">Wanna host photography events online?<br>Well PottiFi is here!<br></p>
-        </div>
-        <div class="buttons row">
-            <button class="btn">Sign In</button>
-            <button class="btn">Get In</button>
+        <div class="modal fade" id="getinpopup">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Enter your credentials to get in!</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <form class="getin">
+                    <label for="name">Email-Id:</label><br>
+                    <input type="text"><br><br id="secondline">
+                    <label for="name">Password:</label><br>
+                    <input type="text"><br><br>  
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <a href="participant.html" class="btn btn-default submit text-center">Submit</a>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        <div class="row">
+            <div class="col-7 column">
+                <div class="catchline row">
+                    <p class="catchtext">Wanna host photography events online?<br>Well PottiFi is here!<br></p>
+                </div>
+                <div class="buttons row">
+                    <a href="#signup!" class="btn">Sign Up</a>
+                    <a href="#signup!" class="btn">Sign In</a>
+                </div>
+            </div>
+            <div class="col-3 column">
+                <div class="container getincont">
+                <div class="catchline1 row">
+                    <p class="catchtext1">Participating?</p>
+                    <form class="getinform" action="#">
+                        <h3 class="hd1">Enter the stage code and<br>join the league!</h2><br>
+                        <label for="stagecode">Enter Stage Code</label><br>
+                        <input type="text"><br><br>
+                        <button class="btn getinbut" data-toggle="modal" data-target="#getinpopup">Get In</button> 
+                    </form>
+                    </div>  
+                </div>
+            </div>
+            
         </div>
     </div>
 <!--------------------------------------------------------------login container------------------------------------------------------------------>
-    <div class="login container-fluid">
+    <div class="login container-fluid" id="signup!">
         <div class="details row">
             <div class="signin col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <h2 class="head">Sign In to host events!</h2>
+                <h2 class="head" >Sign Up to host for the first time!</h2>
                 <form class="forms">
+                    <h2 class="hd2">Sign Up</h2><br>
+                    <label for="fname">Email-Id:</label><br>
+                    <input type="text"><br><br id="secondline">
+                    <label for="fname">Password:</label><br>
+                    <input type="text"><br><br>
+                    <input type="submit" value="Sign Up">
+                </form>
+            </div>
+            <div class="signup col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <h2 class="head">Sign In to host as much as you can!</h2>
+                <form class="forms" action="hostmainpg.html">
                     <h2 class="hd2">Sign In</h2><br>
-                    <label for="fname">Username:</label><br>
+                    <label for="fname">Email-Id:</label><br>
                     <input type="text"><br><br id="secondline">
                     <label for="fname">Password:</label><br>
                     <input type="text"><br><br>
                     <input type="submit" value="Sign In">
                 </form>
             </div>
-            <div class="getin col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <h2 class="head">Get In to participate!</h2>
-                <form class="forms">
-                    <h2 class="hd2">Get in</h2><br>
-                    <label for="fname">Stage code:</label><br>
-                    <input type="text"><br><br id="secondline">
-                    <label for="fname">Password:</label><br>
-                    <input type="text"><br><br>
-                    <input type="submit" value="Get In">
-                </form>
-            </div>
         </div>
     </div>
 <!----------------------------------------------------------------------aboutus Container------------------------------------------------------------>
-    <div class="aboutus container-fluid">
+    <div class="aboutus container-fluid" id="aboutus!">
         <div class="content">
             <h1>About Us</h1>
-            <p>PottiFi is a go-to option to host online competitions. <br>We, as competitors, felt the need of participating and hosting competitions in any part of the world with ease,<br> and hence <b>PottiFi</b></p>
+            <p>PottiFi is a go-to option to host online competitions.<br>We, as competitors, felt the need of participating and hosting competitions in any part of the world with ease,<br> and hence <b>PottiFi</b></p>
         </div>
     </div>
 <!------------------------------------------------------------------------footer-------------------------------------------------------------------------->
