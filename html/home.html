@@ -91,25 +91,43 @@
 <!--------------------------------------------------------------login container------------------------------------------------------------------>
     <div class="login container-fluid" id="signup!">
         <div class="details row">
-            <div class="signin col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="signup col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <h2 class="head" >Sign Up to host for the first time!</h2>
-                <form class="forms">
-                    <h2 class="hd2">Sign Up</h2><br>
-                    <label for="fname">Email-Id:</label><br>
-                    <input type="text"><br><br id="secondline">
-                    <label for="fname">Password:</label><br>
-                    <input type="text"><br><br>
-                    <input type="submit" value="Sign Up">
+                <form class="formssignup">
+                    <div class="sign row">
+                        <h2 class="hd2">Sign Up</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="fname">Email-Id:</label><br>
+                            <input type="text"><br><br id="secondline">
+                            <label for="fname">First Name:</label><br>
+                            <input type="text"><br><br id="secondline">
+                            <label for="fname">Last Name:</label><br>
+                            <input type="text"><br><br id="secondline">
+                        </div>
+                        <div class="col-6">
+                            <label for="fname">Password:</label><br>
+                            <input type="text"><br><br>
+                            <label for="fname">Retype Password:</label><br>
+                            <input type="text"><br><br>
+                            <label for="fname">Phone number:</label><br>
+                            <input type="number"><br><br>
+                        </div>
+                        <div class="button row">
+                            <input type="submit" value="Sign Up">
+                        </div>
+                    </div>
                 </form>
             </div>
-            <div class="signup col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="signin col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <h2 class="head">Sign In to host as much as you can!</h2>
                 <form class="forms" action="hostmainpg.html">
                     <h2 class="hd2">Sign In</h2><br>
                     <label for="fname">Email-Id:</label><br>
-                    <input type="text"><br><br id="secondline">
+                    <input type="text" id="signintb"><br><br id="secondline">
                     <label for="fname">Password:</label><br>
-                    <input type="text"><br><br>
+                    <input type="text" id="signintb"><br><br>
                     <input type="submit" value="Sign In">
                 </form>
             </div>

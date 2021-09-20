@@ -131,20 +131,42 @@ body{
 .details{
     height: 500px;
 }
-.signin,.signup{
+.signin{
     padding-top: 10%;
     padding-bottom: 10%;  
+}
+.signup{
+    padding-top: 8%;
+    padding-bottom: 10%; 
 }
 .signdetails{
     padding-left: 10%;
 }
-.signin{
-    border-right: 1px solid black;
-} 
 .head{
     text-align: center;
     color: black;
-}  
+} 
+.sign{
+    height: 50px;
+    padding-left: 41%;
+
+}
+#signintb{
+    width: 75%;
+}
+.formssignup{
+    width: 75%;
+    height: 430px;
+    padding-top: 4%;
+    text-align: center;  
+    background: rgba(105, 54, 153, 0.86);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(105, 54, 153, 0.3);
+    margin-left: 15%;
+} 
 .forms{
     width: 50%;
     height: 350px;
@@ -161,10 +183,10 @@ body{
 label[for="fname"],.hd2{
     color: black;
 }
-input[type=text]{
+input[type=text],input[type=number]{
     background-color:white;
     color:black;
-    width: 75%;
+    width: 100%;
     height: 35px;
 }
 input[type=submit]{
@@ -174,6 +196,12 @@ input[type=submit]{
     padding:2% 5% 2% 5%;
     border: 1px solid black;
     width: 30%;
+    height: 40px;
+    text-align: center;
+}
+.button{
+    margin-left: 41%;
+    width: 100%;
 }
 
 /*****************************************************************aboutus container*****************************************************************/

@@ -39,12 +39,7 @@ body,.row{
 }
 /***********************************************************event details row**********************************************************************/
 .eventdetails{
-    background-color:#e2b2ff;
     height: 400px;
-    border-radius: 25px;  
-    width: 60%;
-    margin-left: 0px;
-    margin-right: 0px;
 }
 .events,.events1{
     display: flex;
@@ -53,7 +48,10 @@ body,.row{
 }
 .events{
     border-right: 1px solid black;
+    width: 100px;
+    margin-left: 3%;
 }
+
 
 /**************************************************************Submit button***********************************************************************/
 .btn{
