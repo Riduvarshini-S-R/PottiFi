@@ -1,0 +1,44 @@
+.mainarea{
+    background-color: aqua;
+}
+.slidecontainer{
+    position: relative;
+    height: inherit;
+    overflow: hidden;    
+}
+.row{
+    display: flex;
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+    height: 700px;
+    align-items: center;
+}
+
+
+.slidecontainer .participant-hidden {
+  display: none;
+}
+
+
+.eachparticipant .participant-visible{
+    display: block;
+    /* animation: fadeVisibility 0.5s; */
+}
+
+
+.eachparticipant{
+    position: relative;
+}
+
+@keyframes fadeVisibility {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: opacity linear;
+    }
+  }
+  
+  /************************************************* githubcode************************************************** */

@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+}
+
+/******************************************************************nav bar*************************************************************************/
+
+/* background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);  */
+nav{
+    background-color: #730C99;
+}
+.navbar-brand{
+    margin-bottom: 0;
+}
+.logo{
+    height: 50px;
+}
+
+/******************************************************************body****************************************************************************/
+body{
+    width: 100%;
+}
+.container-fluid{
+    margin: 0;
+    height: 720px;  
+}
+.row{
+    height: 350px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+/*****************************************************************Tagline container****************************************************************/
+.tagline{
+    background-image: url(../images/bg1.png);
+    background-size: 40%; 
+}
+/* .catchline{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+} */
+.catchtext1{
+    text-align: center;
+    color: white;
+    margin-left: 15%;
+    margin-top: 10%;
+    font-size:40px;
+}
+.catchtext{
+    color: #730C99;
+    text-align: center;
+    font-size: 40px;
+    padding-left: 15%;
+    padding-top:25% ;
+
+}
+.buttons{
+    padding-left:42%;
+} 
+.btn{
+    height: 40px;
+    background-color: black;
+    color: white;
+    margin: 2%;
+    width:15%;
+}
+.hd1{
+    color: white;
+}
+.col-3{
+    margin-top:10% ;
+    background: rgba(0, 0, 0, 0.78);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    height: 400px;
+    margin-left: 5%;
+}
+.getinform{
+    
+    width: 100%;
+    text-align: center;
+    height: 300px;
+    padding-top: 10%;
+    color: white;
+}
+.getinbut{
+    width: 25%;
+}
+.modal-title{
+    margin-left: 18%;
+}
+.modal{
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.7px);
+    -webkit-backdrop-filter: blur(7.7px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.modal-dialog{
+    margin-top: 15%;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 16px;
+}
+.modal-content{
+    background-color: #730C99;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(105, 54, 153, 0.3);
+    color:black;
+}
+.getin{
+    text-align: center;
+}
+
+
+/********************************************************************login container****************************************************************/
+.login{
+    background-image: url(../images/bg2.png);
+    background-size: 98%;
+}
+.details{
+    height: 500px;
+}
+.signin,.signup{
+    padding-top: 10%;
+    padding-bottom: 10%;  
+}
+.signdetails{
+    padding-left: 10%;
+}
+.signin{
+    border-right: 1px solid black;
+} 
+.head{
+    text-align: center;
+    color: black;
+}  
+.forms{
+    width: 50%;
+    height: 350px;
+    padding-top: 4%;
+    text-align: center;  
+    background: rgba(105, 54, 153, 0.86);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(105, 54, 153, 0.3);
+    margin-left: 25%;
+}
+label[for="fname"],.hd2{
+    color: black;
+}
+input[type=text]{
+    background-color:white;
+    color:black;
+    width: 75%;
+    height: 35px;
+}
+input[type=submit]{
+    background-color: #000000;
+    color:white;
+    border-radius: 4px;
+    padding:2% 5% 2% 5%;
+    border: 1px solid black;
+    width: 30%;
+}
+
+/*****************************************************************aboutus container*****************************************************************/
+.aboutus{
+    background-image: url(../images/bg3.png);
+    background-size: cover;  
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.content{
+    font-size: 20px;
+    color: #7C40A9;
+    text-align: center;
+}
+/******************************************************************footer**************************************************************************/
+footer{
+    height: 350px;
+    background-color: #730C99;
+}
+.contactdetails{ 
+    color: #fefced;
+    font-size: 20px;
+    text-align: center;
+}
+.footerdetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #fefced;
+    border-right: 1px solid #fefced ;
+}
+.quicklinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fefced;
+    text-align: center;
+    font-size: 20px;
+}
+ul{
+    list-style-type: none;
+}
+/*******************************************************************MEDIA QUERIES******************************************************************/
+
+/*
+    --Extra-small: 576px;
+    --Small:576px;
+    --Medium:768px;
+    --Large:992px;
+    --Extra-large:1200px;
+*/
+
+@media screen and (max-width:576px) {
+    /********************tagline container***********************/
+    .tagline{
+        height: 600px;
+    }
+    .catchline{
+        height: 320px;
+    }
+    .catchtext{
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+        margin-left: 7%;
+    }  
+    .btn{
+        width: 20%;
+        padding: 0;
+        font-size: 15px;
+        margin-left: 7%;
+    } 
+    /********************signin container**************************/
+    .login{
+        height: 750px;
+    }
+    .signin{
+        border: transparent;
+    }
+    .signin,.signup{
+        padding-left: 0px;
+        margin-right: 7%;
+    }
+    #secondline{
+        display: none;
+    }
+    .forms{
+        height: 100%;
+        width: 70%;
+    }
+    .hd2,.head{
+        font-size: 20px;
+    }
+    .head{
+        margin-left: 20%;
+    }
+    label[for="fname"]{
+        font-size: 15px;
+    }
+    input[type=text]{
+        height: 20px;
+    }
+    input[type=submit]{
+        height: 10px;
+        font-size: 12px;
+        padding-bottom: 10%;
+    }
+    .hd2,label[for="fname"]{
+        margin-bottom: 0px;
+    }
+    /*******************aboutus container********************/
+    .content{
+        font-size: 20px;
+    }
+    .aboutus{
+        background-size: cover;
+    }
+    /*******************footer******************************/
+    footer,.footerdet{
+        height: 150px;
+    }
+    .contactdetails,.quicklinks{
+        font-size: 11px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:786px) {
+    .container-fluid{
+        height: 620px;
+    }
+    .catchtext{
+        margin-left: 5%;
+    }
+    .btn{
+        width: 15%;
+    }
+    .login{
+        height: 1100px;
+    }
+    .head{
+        margin-left: 1%;
+    }
+    .forms{
+        margin-left: 25%;
+    }
+    .signin{
+        border: transparent;
+    }
+    footer,.footerdet{
+        height: 200px;
+    }
+    .contactdetails,.quicklinks{
+        font-size: 15px;
+    }
+}
+@media screen and (min-width:786px) and (max-width:992px) {
+    .container-fluid{
+        height: 620px;
+    }
+    .btn{
+        width: 10%;
+    }
+    .signin,.signup{
+        height: 620px;
+    }
+    .forms{
+        width: 70%;
+        margin-right: 20%;
+        margin-left: 16%;
+    }
+    .head{
+        margin-left: 5%;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px){
+    .container-fluid{
+        height: 670px;
+    }
+    .catchtext,.btn{
+        margin-left: 7%;
+    }
+    .btn{
+        width: 10%;
+    }
+    .head{
+        margin-left: 10%;
+    }
+    .forms{
+        width: 60%;
+    }
+
+}
