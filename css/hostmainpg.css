@@ -10,42 +10,61 @@ body{
 .row{
     width: 100%;
 }
-/*************************************************************************Nav bar********************************************************************/
+/******************************************************************nav bar*************************************************************************/
 
 /* background-color: #a4508b;
     background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);  */
-
-nav{
-    background-color: #730C99;
-}
-.navbar-brand,.navbar-text{
-    margin-bottom: 0;
-}
-.logo{
-    height:6vh;
-}
-
+    nav{
+        background-color: #730C99;
+    }
+    .navbar-brand{
+        margin-bottom: 0;
+    }
+    .logo{
+        height: 50px;
+    }
 /********************************************************************First Container******************************************************************/
+.container-fluid{
+    height:500px;
+}
 .tile{
-    margin-top: 10vh;
+    margin-top: 10%;
     width: 90%;
-    height: 75vh;
+    height: 300px;
 }
 .card{
-    height: 30vh;
+    height: 220px;
     border-radius: 4px;
     border: 1px solid black;
 }
 .card-text{
-    height: 20vh;
+    height: 150px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-/**********************************************************footer*******************************************************/
-footer{    
-    height: 50vh;
+.button{
+    height: 200px;
+    padding-left: 45%;
+}
+.new{
+    height: 40px; 
+    background-color: rgb(239, 239, 239);
+    color:black;
+    margin: 2%;
+    width:20%; 
+}
+.openstage{
+    height: 40px; 
+    background-color: rgb(239, 239, 239);
+    color:black;
+    width:100%; 
+}
+/******************************************************************footer**************************************************************************/
+footer{
+    height: 300px;
+    width: 100%;
     background-color: #730C99;
 }
 .contactdetails{ 
@@ -59,13 +78,18 @@ footer{
     align-items: center;
     border-left: 1px solid #fefced;
     border-right: 1px solid #fefced ;
+    height: 300px;
 }
 .quicklinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #fefced;
-    height: 50vh;
     text-align: center;
-    padding-top: 20%;
     font-size: 20px;
+}
+ul{
+    list-style-type: none;
 }
 /*******************************************************************MEDIA QUERIES******************************************************************/
 

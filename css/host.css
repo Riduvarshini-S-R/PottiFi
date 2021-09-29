@@ -35,29 +35,32 @@ body,.row{
 .heading{
     height: 80px;
     padding-top: 2%;
-    padding-left: 22%;
 }
+h2{
+    text-align: center;
+}
+
 /***********************************************************event details row**********************************************************************/
-.eventdetails{
-    height: 400px;
+form{  
+    margin-left:25% ; 
+    /* padding-left: 2%; */
+    height: 450px;
+    padding-top:4%;
+    width: 50%;
+    text-align: center;  
+    background:#bca0dc;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(105, 54, 153, 0.3);
 }
-.events,.events1{
-    display: flex;
-    align-items: center;
-    justify-content: center; 
+.formcontents{
+    padding-left: 5%;
 }
-.events{
-    border-right: 1px solid black;
-    width: 100px;
-    margin-left: 3%;
-}
-
-
 /**************************************************************Submit button***********************************************************************/
 .btn{
-    margin-top: 4%;
-    margin-left: 24.5%;
-    width: 8%;
+    width: 15%;
     background-color: #693699;
     border-radius: 25px;
     color: #fefced
