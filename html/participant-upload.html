@@ -13,52 +13,29 @@
 <!-----------------------------------------Body--------------------------------------------------------------------------->
 <body>
 <!-----------------------------------------------------------------nav bar------------------------------------------------------------------------>
-<nav class="navbar navbar-expand-lg navbar-dark">
-    <a href="#" class="navbar-brand"><img class="img-responsive logo" src="/images/pottifii logo trans.png" ></a>
-    <p class="navbar-brand text">PottiFi</p>
-    <div class="collapse navbar-collapse">
-    <ul class="navbar-nav ml-auto">
-        <li class="navbar-item">
-            <p class="navbar-text">Dont have an account?</p>
-        </li>
-        <li class="navbar-item">
-            <a class="nav-link" href="#">
-                Sign Up
-            </a>
-        </li>
-    </ul>
-</div>
+<nav class="navbar navbar-expand-md navbar-dark">
+    <a href="home.html" class="navbar-brand"><img class="img-responsive logo" src="../images/pottifi logo and text trans 2.png"></a>
 </nav>
 <!----------------------------------------------------------------upload container-------------------------------------------------------------->
-<div class="container-fluid">
+<div class="upload container-fluid">
     <div class="container">
-        <div class="compdetails row">
-            <div class="details col-3">
-                <p>Last date: </p>
-            </div>
-            <div class="details col-3">
-                <p>Total Submissions so far:</p>
-            </div>
-            <div class="details col-3">
-                <p>Event Ends in:</p>
-            </div>
-            <div class="details col-3">
-                <p>Judges</p>
-            </div>
-        </div>
-        <div class="upload row">
-            <div class="image col-6">
-                <div class="imgupload col-12">
-                </div>
-            </div>
-            <div class="image col-6">
-                <div class="imgupload col-12">
-                </div>
+        <div class="row">
+            <div class="uploadcol col-12">
+                <form action="gradingpage.html">
+                    <h2>Submission form</h2><br>
+                    <label for="details">First name:</label><br>
+                    <input type="text"><br><br>
+                    <label for="details">Last name:</label><br>
+                    <input type="text"><br><br>
+                    <label for="details">Upload your image</label><br>
+                    <input type="file"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
             </div>
         </div>
     </div>
 </div>
-<!--------------------------------------------------------------------------Footer--------------------------------------------------------------------------->
+<!-------------------------------------------------------------------Footer--------------------------------------------------------------------------->
 <footer>
     <div class="footerdet row">
         <div class="footerdetails col-4">
