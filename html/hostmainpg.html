@@ -7,60 +7,53 @@
     <link href="/css/hostmainpg.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>PottiFi-Hostmn</title>
 </head>
 <!-----------------------------------------------------------Body----------------------------------------------------------->
 <body>
 <!----------------------------------------------------------Nav bar--------------------------------------------------------->
-    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark">
-        <a href="#" class="navbar-brand"><img class="img-responsive logo" src="/images/pottifii logo trans.png" ></a>
-        <p class="navbar-brand">PottiFi</p>
-        <button class="navbar-toggler" type="button" toggle="collapse" data-target="#mynav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mynav">
-        <ul class="navbar-nav ml-auto">
-            <li class="navbar-item">
-                <a class="nav-link" href="#">
-                    Host stage
-                </a>
-            </li>
-        </ul>
-        </div>
-    </nav>
+<nav class="navbar navbar-expand-md navbar-dark">
+    <a href="home.html" class="navbar-brand"><img class="img-responsive logo" src="../images/pottifi logo and text trans 2.png"></a>
+</nav>
 <!--------------------------------------------------------------events container--------------------------------------------------------------------------->
     <div class="container-fluid">
         <div class="container">
             <div class="tile row">
                 <div class="col-4">
                     <div class="card container">
-                    <div class="card-text">GritX 3.0</div>
-                    <button class="btn">Open stage</button>
+                        <div class="card-text">
+                            GritX 3.0
+                        </div>
+                        <a class="openstage btn" href="gradingpage.html">Open stage</a>
+                    </div>
                 </div>
-                </div>
+            </div>
+            <div class="button row">
+                <a href="host.html" class="new btn"><i class="fas fa-plus"></i> Host stage</a>
             </div>
         </div>
     </div>
 
-<!--------------------------------------------------------------------------Footer--------------------------------------------------------------------------->
+<!------------------------------------------------------------------------footer-------------------------------------------------------------------------->
 <footer>
-    <div class="row">
+    <div class="footerdet row">
         <div class="footerdetails col-4">
             <p class="contactdetails">Powered by</p>
         </div>
         <div class="footerdetails col-4">
             <p class="contactdetails">Contact Us<br><br>help.pottifi@gmail.com<br>bigus12.tech@gmail.com</p>
         </div>
-        <div class="col-4">
-            <div class="quicklinks col-12">
-                <p>Quick Links</p>
-                <a class="contactdetails" href="#">About Us</a><br>
-                <a class="contactdetails" href="#">Sign Up</a><br>
-                <a class="contactdetails" href="#">Sign In</a><br>
-                <a class="contactdetails" href="#">Get In</a><br>   
-            </div>        
+        <div class="quicklinks col-4">
+            <ul>
+                <li><p class="contactdetails">Quick Links</p></li> 
+                <li><a class="contactdetails" href="#">About Us</a></li>
+                <li><a class="contactdetails" href="#">Sign Up</a></li>
+                <li><a class="contactdetails" href="#">Sign In</a></li>
+                <li><a class="contactdetails" href="#">Get In</a></li>     
+            </ul>     
         </div>
     </div>
-</footer>
+</footer>   
 </body>
 </html>

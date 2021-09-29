@@ -13,20 +13,46 @@
 <body>
 <!-----------------------------------------------------------------nav bar------------------------------------------------------------------------>
 <nav class="navbar navbar-expand-md navbar-dark">
-    <a href="#" class="navbar-brand"><img class="img-responsive logo" src="../images/pottifi logo and text trans 2.png"></a>
+    <a href="home.html" class="navbar-brand"><img class="img-responsive logo" src="../images/pottifi logo and text trans 2.png"></a>
 </nav>
 <!-------------------------------------------------------------getin container---------------------------------------------------------------------->
 <div class="container-fluid">
     <div class="container">
-        <div class="getin col-12">
-            <form>
-                <h2 id="head">Enter your details to getin!</h2>
-                <label for="details">Email-Id:</label><br>
-                <input type="text"><br><br>
-                <label for="details">Phone number:</label><br>
-                <input type="number"><br><br>
-                <input type="submit" value="Get In">
-            </form>
+        <div class="row page">
+            <div class="participateup col-6">
+                <form class="partiup">
+                    <h2 id="head">Enter your details to signup!</h2>
+                    <div class="row details">
+                        <div class="col-6">
+                            <label for="details">Email-Id:</label><br>
+                            <input type="text"><br><br>
+                            <label for="details">First name:</label><br>
+                            <input type="text"><br><br>
+                            <label for="details">Last name:</label><br>
+                            <input type="text"><br><br>
+                        </div>
+                        <div class="col-6">
+                            <label for="details">Password:</label><br>
+                            <input type="password"><br><br>
+                            <label for="details">Retype Password:</label><br>
+                            <input type="password"><br><br>
+                            <label for="details">Phone number:</label><br>
+                            <input type="number"><br><br>
+                        </div>
+                    </div>
+                    <input type="submit" id="signup" value="Sign Up">
+                </form>
+            </div>
+            <div class="participatein col-6">
+                <form class="partiin" action="otp.html">
+                    <h2 id="head">Have an Account?<br>Getin here!</h2>
+                    <label for="details">Phone number:</label><br>
+                    <input type="number"><br><br>
+                    <label for="details">Email-Id:</label><br>
+                    <input type="text"><br><br>
+                    <input type="submit" value="Get In">
+                </form>
+            </div>
         </div>
     </div>
 </div>

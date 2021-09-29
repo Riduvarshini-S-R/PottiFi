@@ -9,71 +9,62 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>PottiFi-Host</title>
 </head>
-<!-----------------------------------------Body------------------------------------------->
+<!---------------------------------------------------------------------Body-------------------------------------------------------------------------->
 <body>
-<!-----------------------------------------Navbar------------------------------------------>
-<nav class="navbar navbar-expand-lg navbar-dark">
-    <a href="#" class="navbar-brand"><img class="img-responsive logo" src="/images/pottifii logo trans.png"></a>
-    <p class="navbar-brand text">PottiFi</p>
-    <div class="collapse navbar-collapse">
-    <ul class="navbar-nav ml-auto">
-        <li class="navbar-item">
-            <p class="navbar-text">Dont have an account?</p>
-        </li>
-        <li class="navbar-item">
-            <a class="nav-link" href="#">
-                Sign Up
-            </a>
-        </li>
-    </ul>
-</div>
+<!-------------------------------------------------------------------nav bar------------------------------------------------------------------------>
+<nav class="navbar navbar-expand-md navbar-dark">
+    <a href="home.html" class="navbar-brand"><img class="img-responsive logo" src="../images/pottifi logo and text trans 2.png"></a>
 </nav>
-<!---------------------------------eventdetails container-------------------------------------->
+<!------------------------------------------------------------eventdetails container-------------------------------------------------------------->
 <div class="container-fluid">
     <div class="container">
         <div class="heading row">
-            <div class="col-12">
+            <div class="col-12 head">
                 <h2>Event Details</h2>
             </div>
         </div>
         <div class="eventdetails row">
-            <div class="events col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="eventsform col-12">
                 <form>
-                    <label for="details">Event Title</label><br>
-                    <input type="text"><br><br>
-                    <label for="details">Theme</label><br>
-                    <input type="text"><br><br>
-                    <label for="details">Participant limit</label><br>
-                    <select id="details">
-                        <option value="50">50</option>
-                        <option value="100">100</option>
-                        <option value="150">150</option>
-                        <option value="200">200</option>
-                    </select><br><br>
-                    <label for="details">Maximum Number of Entries</label><br>
-                    <select id="details">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="more than 3">More than 5</option>
-                    </select>
+                    <div class="formcontents row">
+                        <div class="events col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <label for="details">Event Title</label><br>
+                            <input type="text"><br><br>
+                            <label for="details">Theme</label><br>
+                            <input type="text"><br><br>
+                            <label for="details">Participant limit</label><br>
+                            <select id="details">
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="150">150</option>
+                                <option value="200">200</option>
+                            </select><br><br>
+                            <label for="details">Maximum Number of Entries</label><br>
+                            <select id="details">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="more than 3">More than 5</option>
+                            </select>
+                        </div>
+                        <div class="events1 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <label for="details">Judges</label><br>
+                            <input type="text"><br><br>
+                            <label for="details">Submissions Start Date</label><br>
+                            <input type="date"><br><br>
+                            <label for="details">Submissions End Date</label><br>
+                            <input type="date"><br><br>
+                            <label for="details">Result Date</label><br>
+                            <input type="date"><br><br>
+                        </div>
+                    </div>
+                    <a class="btn" href="hostmainpg.html">Submit</a>
                 </form>
             </div>
-            <div class="events1 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <label for="details">Judges</label><br>
-                    <input type="text"><br><br>
-                    <label for="details">Submissions Start Date</label><br>
-                    <input type="date"><br><br>
-                    <label for="details">Submissions End Date</label><br>
-                    <input type="date"><br><br>
-                    <label for="details">Result Date</label><br>
-                    <input type="date"><br><br>
-            </div>
         </div>
-            <button class="btn">Submit</button>
     </div>
 </div>
-<!------------------------------------------Footer-------------------------->
+<!-------------------------------------------------------------------Footer----------------------------------------------------------------------->
 <footer>
     <div class="footerdet row">
         <div class="footerdetails col-4">
