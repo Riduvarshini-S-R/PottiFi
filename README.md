@@ -1,8 +1,8 @@
-# PottiFi (In Progress)
+# PottiFi - A Virtual Photography Competition Organiser Application (In Progress)
 
 A application developed to conduct photography competitions virtually using HTML, CSS and Django
 
-# Features
+## Features
 
 - Participant, Judges and Admin Login
 - Competition page - List of competitions are displayed
@@ -10,6 +10,6 @@ A application developed to conduct photography competitions virtually using HTML
 - Scoring page - Judges can score the photos based on criteria defined by the organiser [admin]
 - Results page - The results of the competition are displayed
 
-# Current Status
+## Current Status
 
 The frontend and backend of this project is under development phase.
